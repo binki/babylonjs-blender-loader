@@ -1,0 +1,32 @@
+{
+  "name": "webpack-babylonjs-blender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha && dependency-lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/binki/webpack-babylonjs-blender.git"
+  },
+  "author": "Nathan Phillip Brink <ohnobinki@ohnopublishing.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/binki/webpack-babylonjs-blender/issues"
+  },
+  "homepage": "https://github.com/binki/webpack-babylonjs-blender#readme",
+  "devDependencies": {
+    "cross-spawn": "^5.0.1",
+    "dependency-lint": "^4.3.1",
+    "mocha": "^3.2.0",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "babylonjs-blender": "^1.1.0",
+    "exit-hook": "^1.1.1",
+    "generic-pool": "^3.1.5",
+    "promisify-node": "^0.4.0",
+    "webpack-util-cleantmp": "^1.0.0"
+  }
+}
