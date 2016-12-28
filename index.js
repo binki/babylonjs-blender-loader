@@ -55,7 +55,10 @@ module.exports = function (source) {
         return worker.process(input).then(job => {
           return fs.readFile(job.output);
         }).then(contents => {
-          callback(null, `module.exports = ${contents}`);
+          // For some reason, they use “data:” but do not allow
+          // “application/json,” or encodeURIComponent(). It’s… like…
+          // wrong!
+          callback(null, `module.exports = new (require(${JSON.stringify(path.join(__dirname, 'runtime.js'))})).BlendWrapper(${JSON.stringify(`data:${contents}`)});`);
         }, ex => {
           callback(ex);
         }).then(() => {

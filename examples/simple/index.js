@@ -1,7 +1,6 @@
-const babylonjsJson = require('./simple.blend');
+const BABYLON = require('babylonjs');
 
-// You should load these into babylon directly. Since I’m no good at
-// that type of stuff, for the moment just going to demo accessing the
-// internal JSON output (which you should probably not rely on for
-// normal stuff).
-babylonjsJson.meshes.forEach(mesh => console.log(mesh.name));
+const engine = new BABYLON.Engine(document.getElementById('render-canvas'), true);
+const scene = new BABYLON.Scene(engine);
+require('./simple.blend').Append(BABYLON.SceneLoader, scene, loadedScene => {/*onsuccess*/}, x => {/*onprogress*/}, ex => {/*onerror*/});
+engine.runRenderLoop(() => scene.render());

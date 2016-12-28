@@ -1,3 +1,9 @@
 ignoreErrors:
   # Used in spawn() by tests, not detected by dependency-lint
   unused: ['webpack']
+
+requiredModules:
+  files:
+    dev:
+      - '**/*test.js'
+      - 'examples/**/*.js'

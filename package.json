@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/binki/webpack-babylonjs-blender#readme",
   "devDependencies": {
+    "babylonjs": "^2.5.0",
     "cross-spawn": "^5.0.1",
     "dependency-lint": "^4.3.1",
     "mocha": "^3.2.0",
