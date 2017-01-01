@@ -16,6 +16,9 @@
     "url": "https://github.com/binki/webpack-babylonjs-blender/issues"
   },
   "homepage": "https://github.com/binki/webpack-babylonjs-blender#readme",
+  "engines": {
+    "node": ">=4"
+  },
   "devDependencies": {
     "babylonjs": "^2.5.0",
     "cross-spawn": "^5.0.1",
