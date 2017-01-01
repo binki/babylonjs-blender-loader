@@ -1,3 +1,5 @@
+**This package has been renamed to [`babylonjs-blender-loader`](https://www.npmjs.com/package/babylonjs-blender-loader)**
+
 Load Blender `.blend` files as BabylonJS objects through a webpack
 loader.
 
