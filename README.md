@@ -52,12 +52,12 @@ detailed instructions in the documentation for
 
 ## Installation
 
-    $ npm install --save webpack-babylonjs-blender
+    $ npm install --save babylonjs-blender-loader
 
 ## Configuration
 
 You are free to write
-`require('webpack-babylonjs-blender!../models/person.blend')`, but
+`require('babylonjs-blender-loader!../models/person.blend')`, but
 that is clunky and you probably want to use this loader for all
 `.blend` files. To do so, configure webpack to use this loader as the
 default for `.blend` files:
@@ -66,7 +66,7 @@ default for `.blend` files:
 ({
     module: {
         loaders: [
-            { test: /\.blend$/, loader: 'webpack-babylonjs-blender', },
+            { test: /\.blend$/, loader: 'babylonjs-blender-loader', },
         ],
     },
 })
