@@ -28,6 +28,6 @@
     "exit-hook": "^1.1.1",
     "generic-pool": "^3.1.5",
     "promisify-node": "^0.4.0",
-    "webpack-util-cleantmp": "^1.0.0"
+    "tmp-promise": "^1.0.2"
   }
 }
